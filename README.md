@@ -37,7 +37,7 @@ Once you have chosen an item, type the number of units you would like
 
 ![bamazon units](http://imgur.com/isuw8rC.png)
 
-If there is enough inventory you should see
+If there is enough inventory you should see "Succesfully bought for $[total]"
 
 ![bamazon successfully bought](http://imgur.com/LCqN3FK.png)
 
