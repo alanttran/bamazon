@@ -37,10 +37,9 @@ Once you have chosen an item, type the number of units you would like
 
 ![bamazon units](http://imgur.com/isuw8rC.png)
 
-If there is enough inventory you should be prompted with 
-```node
-Successfully bought for $[total]
-```
+If there is enough inventory you should see
+![bamazon successfully bought](http://imgur.com/LCqN3FK.png)
+
 otherwise you will get
 ```node
 Insufficient quantity
