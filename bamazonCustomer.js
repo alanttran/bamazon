@@ -15,25 +15,21 @@ var connection = mysql.createConnection({
 
 connection.connect(function(err) {
     if (err) throw err;
-    console.log("\n");
     console.log('connected as id ' + connection.threadId);
     console.log("\n");
     initialize();
 });
 
 function initialize() {
-    console.log("Here are all our products today!");
+    console.log("\nHere are all our products today!\n");
     connection.query(
         "SELECT * FROM products",
         function(error, res) {
             if (error) throw error;
             //console.log(res);
             res.forEach(function(element, index, array) {
-                console.log("id: " + element.item_id);
-                console.log("Product: " + element.product_name);
-                console.log("Department: " + element.department_name);
-                console.log("Price: $" + element.price);
-                console.log("\n");
+                console.log(element.item_id + ". " + element.product_name + " - " 
+                	+ element.department_name + " - Price: $" + element.price + "\n");
             })
             console.log("---------------------------------------");
 
@@ -73,14 +69,13 @@ function initialize() {
 }
 
 function updateQuantity(id, quantity) {
-
-    console.log("Update quantity " + id + " " + quantity);
     connection.query(
         "UPDATE products SET stock_quantity=? WHERE item_id=?", [quantity, id],
         function(error, res) {
             if (error) throw error;
             console.log("Inventory successfully updated!");
+            initialize();
         }
     )
-    initialize();
+    
 }
