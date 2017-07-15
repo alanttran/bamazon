@@ -1,0 +1,27 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Amazon-like storefront with mysql",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanttran/bamazon.git"
+  },
+  "keywords": [
+    "bamazon",
+    "mysql"
+  ],
+  "author": "Alan Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanttran/bamazon/issues"
+  },
+  "homepage": "https://github.com/alanttran/bamazon#readme",
+  "dependencies": {
+    "inquirer": "^3.2.0",
+    "mysql": "^2.13.0"
+  }
+}
