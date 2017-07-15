@@ -53,9 +53,10 @@ function initialize() {
 
                             var stockQuantity = res[0].stock_quantity;
                             var userUnitRequest = parseInt(answer.quantity);
+                            var price = res[0].price;
                             var newQuantity = stockQuantity - userUnitRequest;
                             if (stockQuantity >= userUnitRequest) {
-                                updateQuantity(answer.id, newQuantity);
+                                updateQuantity(answer.id, newQuantity,userUnitRequest, price);
                             }
                             else{
                             	console.log("Insufficient quantity");
@@ -68,12 +69,13 @@ function initialize() {
     )
 }
 
-function updateQuantity(id, quantity) {
+function updateQuantity(id, quantity, units, price) {
     connection.query(
         "UPDATE products SET stock_quantity=? WHERE item_id=?", [quantity, id],
         function(error, res) {
             if (error) throw error;
-            console.log("Inventory successfully updated!");
+            var total = units * price;
+            console.log("Successfully bought for $" + total);
             initialize();
         }
     )
