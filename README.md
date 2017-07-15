@@ -25,7 +25,7 @@ connected as id [number]
 
 And then the inventory list
 
-![ngm1_browser_support](https://photos.google.com/share/AF1QipN3__CykvpInoze_6yQExLJ_R3cHxtJ3dE_LaSa-pmlrKtB2Da2b0QaEJgzd1Z3oQ/photo/AF1QipNRahFB2riXyJNdPsvQ42QuqDDRfE0ROAk5xSFD?key=ZG1LUjJ1c1E1Z1Jpd1I3SWZYOWFnRy1fTHFuWjVn)
+![ngm1_browser_support](https://drive.google.com/open?id=0B1VPTW7E4ASXTmRZRUVta19HMlk)
 
 # Using the app
 
